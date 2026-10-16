@@ -1,0 +1,10 @@
+{
+  "description": "Empower aspiring founders to launch service businesses with AI employees, showcasing their vision and inviting users to join an early-access waitlist.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
