@@ -87,12 +87,12 @@ svg { display: block; }
 }
 
 .nav-links { display: flex; gap: 1.9rem; }
-.nav-links a, footer nav a {
+.nav-links a, .site-shell footer nav a {
   font-size: 0.86rem;
   font-weight: 600;
   transition: color 180ms ease;
 }
-.nav-links a:hover, footer nav a:hover { color: var(--blue); }
+.nav-links a:hover, .site-shell footer nav a:hover { color: var(--blue); }
 
 .button {
   min-height: 3.25rem;
@@ -601,7 +601,7 @@ h1 span { color: var(--blue); font-weight: 800; }
 .button-light:hover { box-shadow: 0 0.55rem 0 #969791; }
 .form-footer p { margin: 0; color: #9e9f9a; font-size: 0.69rem; line-height: 1.45; }
 
-footer {
+.site-shell footer {
   padding: 5rem max(1.5rem, calc((100vw - 76rem) / 2)) 2rem;
   display: grid;
   grid-template-columns: 1fr auto auto;
@@ -621,8 +621,8 @@ footer {
   height: 1.4rem;
 }
 .footer-brand > p { margin: 1rem 0 0; color: #999a94; }
-footer nav { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 2.5rem; }
-footer nav a { color: #cacbc5; }
+.site-shell footer nav { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 2.5rem; }
+.site-shell footer nav a { color: #cacbc5; }
 .back-top { display: flex; align-items: center; gap: 0.8rem; font-size: 0.8rem; font-weight: 700; }
 .back-top span {
   width: 2.8rem;
@@ -731,8 +731,8 @@ footer nav a { color: #cacbc5; }
   .waitlist-section { width: calc(100% - 2rem); grid-template-columns: 1fr; padding: 3rem 1.4rem; border-radius: 1.4rem; gap: 3rem; }
   .field-row { grid-template-columns: 1fr; }
   .form-footer { align-items: stretch; flex-direction: column; }
-  footer { grid-template-columns: 1fr auto; gap: 3rem; }
-  footer nav { grid-column: 1 / -1; grid-row: 2; }
+  .site-shell footer { grid-template-columns: 1fr auto; gap: 3rem; }
+  .site-shell footer nav { grid-column: 1 / -1; grid-row: 2; }
   .back-top { grid-column: 2; grid-row: 1; }
   .footer-meta { grid-row: 3; }
 }
@@ -752,8 +752,8 @@ footer nav a { color: #cacbc5; }
   .step-icon::before { width: 1.25rem; height: 1.25rem; }
   .steps li > div:last-child { grid-column: 2; grid-row: 1 / span 2; }
   .steps h3 { font-size: 1.35rem; }
-  footer { gap: 2rem; }
-  footer nav { grid-template-columns: 1fr; }
+  .site-shell footer { gap: 2rem; }
+  .site-shell footer nav { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {
